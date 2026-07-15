@@ -13,6 +13,20 @@ Deliverables:
 
 **Gate:** Architecture reviewed; no production app code required before this gate.
 
+## Status — Vertical Slice Landed
+
+Phases 2–9 for the mocked vertical slice are implemented in-repo:
+
+- Auth.js credentials + tenant membership authorization
+- Prisma schema/migration + Precision CNC Works demo seed
+- Mock AI / telephony / SMS / calendar providers
+- `processInboundCall` + `/api/demo/simulate-call`
+- Deterministic health-score service + dashboard
+- Vitest coverage for isolation, webhooks, scoring, call flow
+- README with local/deploy/demo instructions
+
+Next integration work: swap mock providers to live OpenAI → Twilio → SMS → Calendar one at a time.
+
 ## Phase 2 — Project Foundation
 
 Files (expected):
